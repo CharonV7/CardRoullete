@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <!-- meta elements -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Panagiotis Kaoudis">
+    <meta charset="utf-8">
+    <meta name="description" content="A game of who has the highest card">
+
+    <!-- linking -->
+    <link href="output.css" rel="stylesheet">
+    <script src="script.js" type="module"></script>
+  </head>
+
+  <body class="flex flex-col space-y-3 items-center bg-[#1a1a18]">
+    <!-- Score -->
+    <div class="flex justify-center mt-5 space-x-68">
+      <h3 class="font-mono font-bold text-[#e0e0e0]" id="userP">0</h3>
+      <h1 class="font-mono font-bold text-[#e0e0e0]">SCORE</h1>
+      <h3 class="font-mono font-bold text-[#e0e0e0]" id="botP">0</h3>
+    </div>
+
+    <!-- 2 profile pictures (player and bot)-->
+    <div class="flex justify-center space-x-100">
+      <img src="../assets/emptyprof.png" class="w-50 h-50 border-3">
+      <img src="../assets/robotpfp.jpg" class="w-50 h-50 border-3"> 
+    </div>
+
+    <!-- card Drawn -->
+    <div class="flex justify-center space-x-125">
+      <h3 class="font-mono text-[#e0e0e0]">Card Drawn:</h3>
+      <h3 class="font-mono text-[#e0e0e0]">Card Drawn:</h3>
+    </div>
+
+    <div class="flex justfy-center space-x-150">
+      <h2 class="font-mono text-[#e0e0e0]" id="player">~</h2>
+      <h2 class="font-mono text-[#e0e0e0]" id="bot">~</h2>
+    </div>
+
+    <!-- play button-->
+    <button class="border-2 rounded-full border-[#e0e0e0] p-2" id="play"> <h1 class="font-mono font-bold text-[#e0e0e0]">Play</h1> </button>
+
+    <!-- Who won the round -->
+    <h1 hidden class="font-mono font-bold text-[#e0e0e0] border-1 b-[#e0e0e0] rounded-full p-2 bg-green-600" id="roundWon"></h1>
+
+    <!-- Coninue to the next round -->
+    <button hidden class="border-2 rounded-full border-[#e0e0e0] p-2" id="continue"><h2 class="font-mono font-bold text-[#e0e0e0]">Continue</h2></button>
+
+    <h1 hidden class="font-mono font-bold text-[#e0e0e0] border-1 b-[#e0e0e0] rounded-full p-2 bg-cyan-800" id="gameWon"></h1>
+
+  </body>
+
+</html>
